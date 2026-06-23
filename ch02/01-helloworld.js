@@ -7,10 +7,10 @@ const server = http.createServer((req, res) => {
 
   if (path === '/') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('<p>Welcome! Home Page </p>');
+    res.end('<p> Welcome! Home Page </p>');
   } else if (path === '/about') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('<p> About Page. </p>');
+    res.end('<p>A bout Page. </p>');
   } else {
     res.writeHead(400, { 'Content-Type': 'text/html' });
     res.end('<p> 404 - Page not found. </p> ');

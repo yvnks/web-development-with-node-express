@@ -10,6 +10,6 @@ exports.about = (req, res) => {
 
 exports.notFound = (req, res) => res.render('404');
 
-exports.serverError = (req, res) => {
-  res.render('505');
+exports.serverError = (error, req, res, next) => {
+  res.render('500');
 };

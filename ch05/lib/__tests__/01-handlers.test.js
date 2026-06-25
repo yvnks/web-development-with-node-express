@@ -6,3 +6,12 @@ test('renders home page', () => {
   handlers.home(req, res);
   expect(res.render.mock.calls[0][0]).toBe('home');
 });
+
+test('about page renders with fortune', () => {
+  const req = {};
+  const res = { render: jest.fn() };
+  handlers.about(req, res);
+  expect(res.render.mock.calls.length).toBe(1);
+  expect(res.render.mock.calls[0][0]).toBe('about');
+});
+

@@ -30,9 +30,13 @@ app.use(handlers.notFound);
 // Custom 500 Page.
 app.use(handlers.serverError);
 
-app.listen(PORT, () =>
-  console.log(
-    `Express started on http://localhost:${PORT};` +
-      '\nPress Ctrl + C to terminate.',
-  ),
-);
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(
+      `Express Server started on http://localhost:${PORT} ` +
+        ';Press Ctrl + C to terminate.',
+    );
+  });
+} else {
+  module.exports = app;
+}

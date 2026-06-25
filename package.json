@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "jest": "^30.4.2"
+    "jest": "^30.4.2",
+    "portfinder": "^1.0.38",
+    "puppeteer": "^25.2.1"
   },
   "name": "web-development-with-express",
   "version": "1.0.0",

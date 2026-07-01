@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <% const name = 'mario' %>
+    <header>
+      <h1>Nano healthcare</h1>
+      <p>Sign Up</p>
+      <form action="POST">
+        <label for="firstName">First Name</label> <br />
+        <input type="text" id="firstName" required /><br />
+        <label for="lastName">Last Name</label><br />
+        <input type="text" id="lastName" required /><br />
+        <label for="userAge">Age</label><br />
+        <input type="number" id="userAge" required /><br />
+        <label for="userGender">Gender</label><br />
+        <input type="radio" checked /> Male <input type="radio" /> Female <br />
+        <label for="idNumber">Ghana Card</label> <br />
+        <input type="text" required /> <br />
+        <button>Register</button>
+      </form>
+
+      <p>Already have an account? <a href="/login">Login Here</a>.</p>
+    </header>
+    <footer>
+      <p>Return <a href="/">Home</a></p>
+    </footer>
+  </body>
+</html>

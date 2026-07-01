@@ -12,6 +12,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "ejs": "^6.0.1",
     "import-local": "^3.2.0",
     "jest-cli": "^30.4.2"
   },

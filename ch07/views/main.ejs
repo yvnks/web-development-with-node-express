@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title%></title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar. -->
+      <nav class="nav-bar">
+        <h1>ExpressAPI Blog</h1>
+        <p><a href="/"> <%= title %></a></p>
+
+        <button class="register-button">Register</button>
+        <button class="login-button">Login</button>
+
+        <select name="display-mode" id="displayMode">
+          <option value="">Auto</option>
+          <option value="">Dark</option>
+          <option value="">Light</option>
+        </select>
+      </nav>
+    </header>
+
+    <main>
+      <% if (blogs.length > 0) { %>
+        <% blogs.forEach((blog) => { %>
+          <small> <%= blog.userId %> </small>
+          <small><%= blog.dateCreated  %></small>
+          <h2> <%= blog.title  %></h2>
+          <p><%= blog.msg  %></p>
+          <% }) %>
+      <% } %>
+    </main>
+  </body>
+</html>
